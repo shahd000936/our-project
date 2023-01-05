@@ -1,0 +1,40 @@
+
+:root{
+  --yello:#ffe500;
+  --black:#000;
+  --white:#fff;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+.container{
+  /* do we need padding? */
+
+  /*  padding-left: 50px; */
+  /* padding-right: 50px;  */
+  margin-left: auto;
+  margin-right: auto;  
+  display: grid;
+  grid-template-columns: repeat(12,auto);
+  column-gap: 30px;
+  width: 600px;
+}
+@media (min-width: 768px) {
+  .container {
+      width: 750px;
+  }
+  
+}
+@media (min-width: 992px) {
+  .container {
+      width: 970px;
+  }
+  
+}
+@media (min-width: 1200px) {
+  .container {
+      width: 1170px;
+  }
+  
+}
