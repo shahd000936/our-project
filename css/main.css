@@ -4,6 +4,10 @@
   --black:#000;
   --white:#fff;
 }
+*,*::after,*::before {
+  margin: 0;
+  padding: 0;
+}
 html {
   scroll-behavior: smooth;
 }
@@ -19,6 +23,8 @@ html {
   grid-template-columns: repeat(12,auto);
   column-gap: 30px;
   width: 600px;
+  font-family: 'Raleway', sans-serif;
+  letter-spacing: 1px;
 }
 @media (min-width: 768px) {
   .container {

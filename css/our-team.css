@@ -1,0 +1,36 @@
+.our-team{
+    grid-column: 1/13; 
+    background-color: #fff; 
+    text-align: center;
+} 
+.our-team-logo {
+    margin-top: 80px;   
+} 
+.our-team-header { 
+    margin-top: 35px; 
+    margin-bottom: 40px; 
+    letter-spacing: 17px;
+}
+.our-team-small-grey {
+    line-height: 20px;
+    margin-top: 0;
+    color: grey;
+}
+
+.our-team-people {
+    margin-top: 88px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    font-weight: 600;
+    letter-spacing: 3px;
+}
+.our-team-member {
+    background-color: black;
+    padding-top: 200px;
+    width: 180px;
+}
+.our-team-member p {
+    background-color: #ffe500;
+    padding: 10px 0 10px 0;
+}
