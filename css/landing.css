@@ -1,0 +1,85 @@
+.landing-page {
+  height: 800px;
+  background-color: #1a1a1a;
+}
+
+.landing-page .container {
+  height: 100%;
+  grid-template-areas:
+    "head head head head head head head head head head"
+    "info info info info info info info info info info"
+    "scrol scrol scrol scrol scrol scrol scrol scrol scrol scrol";
+  align-content: space-between;
+}
+
+.landing-page .header {
+  display: flex;
+  padding-top: 20px;
+  justify-content: space-between;
+  grid-area: head;
+}
+
+.landing-page .header .logo {
+  cursor: pointer;
+}
+
+.landing-page .header .logo img {
+  width: 46px;
+  height: 46px;
+}
+
+.landing-page .header .menu {
+  cursor: pointer;
+}
+
+.landing-page .header .menu img {
+  width: 34px;
+  height: 26px;
+}
+
+.landing-page .info {
+  grid-area: info;
+  text-align: center;
+}
+
+.landing-page .info h3 {
+  color: #ffffff;
+  margin-bottom: 36px;
+  font-size: 20px;
+  font-weight: 400;
+  font-family: "Raleway";
+  letter-spacing: 16px;
+}
+
+.landing-page .info p {
+  font-size: 13px;
+  letter-spacing: 5px;
+  color: #ffffff;
+  font-weight: 400;
+  font-family: "Raleway";
+  margin-bottom: 50px;
+}
+
+.landing-page .info .btn {
+  cursor: pointer;
+  margin-left: auto;
+  margin-right: auto;
+  width: 170px;
+  height: 45px;
+  line-height: 45px;
+  text-align: center;
+  background-color: #ffe500;
+  font-size: 10px;
+  letter-spacing: 4px;
+  color: #1b1b1b;
+  font-weight: 700;
+  font-family: "Raleway";
+}
+
+.landing-page .scroll {
+  cursor: pointer;
+  margin-left: auto;
+  margin-right: auto;
+  grid-area: scrol;
+  padding-bottom: 20px;
+}
