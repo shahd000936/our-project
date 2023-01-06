@@ -1,6 +1,7 @@
 .landing-page {
   height: 800px;
-  background-color: #1a1a1a;
+  background-image: url(../images/landing.jpg);
+  background-size: cover;
 }
 
 .landing-page .container {
