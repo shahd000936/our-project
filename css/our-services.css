@@ -1,0 +1,237 @@
+:root {
+    --main-color: #ffe500;
+}
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Raleway', sans-serif;
+}
+
+.container {
+    padding: 0 20px;
+    margin: 0 auto;
+}
+
+/* Small */
+@media (min-width: 768px) {
+    .container {
+        width: 750px;
+    }
+}
+
+/* Medium */
+@media (min-width: 992px) {
+    .container {
+        width: 970px;
+    }
+}
+
+/* Large */
+@media (min-width: 1200px) {
+    .container {
+        width: 1170px;
+    }
+}
+
+/* Start Info */
+.info {
+    padding: 80px 0;
+}
+
+.info .container {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 500px;
+    max-width: 100%;
+}
+
+.info .container .mountain {
+    color: var(--main-color);
+    font-size: 50px;
+    margin-bottom: 60px;
+}
+
+.info .container p {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.6;
+    text-align: center;
+}
+
+/* End Info */
+/* Start Services */
+.services {
+    background-color: #f5f5f5;
+    padding: 80px 0 0;
+    position: relative;
+}
+
+.services .container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+    margin-top: 80px;
+}
+
+.services .container img {
+    width: 100px;
+    position: absolute;
+    left: 50%;
+    transform: translatex(-50%);
+    top: -80px;
+    margin-bottom: 30px;
+}
+
+.services .container .title {
+    text-align: center;
+    font-weight: 500;
+    letter-spacing: 15px;
+    margin-bottom: 30px;
+}
+
+.services .container>p {
+    margin: 0 auto;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.6;
+    text-align: center;
+}
+
+.services-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 30px;
+    margin-top: 80px;
+    position: relative;
+}
+
+.services-content .srv {
+    background-color: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    overflow: hidden;
+    box-shadow: 0 10px 15px 3px rgb(0 0 0 / 10%);
+}
+
+.evaluation {
+    background-color: #fff;
+    padding: 10px 15px;
+    box-shadow: 0 10px 15px 3px rgb(0 0 0 / 10%);
+}
+
+.evaluation div {
+    margin-bottom: 20px;
+    font-weight: 500;
+}
+
+.evaluation span {
+    display: block;
+    width: inherit;
+    height: 3px;
+    background-color: #eee;
+    margin-top: 8px;
+    position: relative;
+}
+
+.evaluation div:first-child span::before {
+    content: "";
+    position: absolute;
+    height: inherit;
+    width: 79%;
+    background-color: var(--main-color);
+}
+
+.evaluation div:nth-child(2) span::before {
+    content: "";
+    position: absolute;
+    height: inherit;
+    width: 100%;
+    background-color: var(--main-color);
+}
+
+.evaluation div:last-child span::before {
+    content: "";
+    position: absolute;
+    height: inherit;
+    width: 60%;
+    background-color: var(--main-color);
+}
+
+.services-content .srv i {
+    color: var(--main-color);
+    font-size: 50px;
+    margin: 20px 0;
+}
+
+.services-content .srv h3 {
+    font-size: 20px;
+    font-weight: 500;
+    letter-spacing: 6px;
+    margin-bottom: 20px;
+    line-height: 1.4;
+    text-transform: uppercase;
+
+}
+
+.services-content .srv>p {
+    font-weight: 400;
+    line-height: 1.4;
+    font-size: 18px;
+    margin-bottom: 20px;
+    color: #444;
+}
+
+/* -------------------- */
+.services-footer {
+    background-color: #444;
+    margin-top: 100px;
+}
+
+.services-footer .container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.services-footer .container div {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    padding: 10px 0;
+}
+
+.services-footer .container div span:first-child {
+    font-weight: 600;
+    margin-bottom: 10px;
+    letter-spacing: 3px;
+    font-family: sans-serif;
+    font-size: 20px;
+}
+
+.services-footer .container div span:last-child {
+    font-weight: 400;
+    letter-spacing: 1px;
+    color: #444;
+}
+
+/* --------------------- */
+
+/* End Services */
